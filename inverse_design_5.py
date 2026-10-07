@@ -484,7 +484,7 @@ def plot_design(fname, params, beta):
     fig.savefig(fname)
 
 
-def report_final_design():
+def report_final_design(sim_data_fp='./final_sim_data.hdf5'):
     
 	history_dict = load_history()
 	obj_vals = np.array(history_dict["objective"])
@@ -516,25 +516,25 @@ def report_final_design():
 
 	sim = make_adjoint_sim(last_params, binarize=True, unfold=True)
 	sim = sim.copy(update=dict(monitors=(field_xy, field_xz, gc_efficiency)))
-	sim_data = web.run(sim, task_name="inv_des_final")
-
+	sim_data = td.SimulationData.from_hdf5(sim_data_fp)
+	# sim = sim.copy(update=dict(monitors=(field_xy, field_xz, gc_efficiency)))
+	# sim_data = web.run(sim, task_name="inv_des_final")
+	# sim_data.to_hdf5(sim_data_fp)
+    
 	mode_amps = sim_data["gc_efficiency"]
 	coeffs_f = mode_amps.amps.sel(direction="-")
 	power_0 = np.abs(coeffs_f.sel(mode_index=0)) ** 2
 	power_0_db = 10 * np.log10(power_0)
 
-	sim_plot = sim.updated_copy(symmetry=(0, 0, 0), monitors=(field_xy, field_xz, gc_efficiency))
-	sim_data_plot = sim_data.updated_copy(simulation=sim_plot)
-
 	fig, ax = plt.subplots(2, 2, figsize=(8, 6), tight_layout=True)
-	sim_plot.plot_eps(z=0, source_alpha=0, monitor_alpha=0, ax=ax[0, 1])
+	sim.plot_eps(z=0, source_alpha=0, monitor_alpha=0, ax=ax[0, 1])
 	ax[1, 0].plot(wavelength_array, power_0_db, "-k")
 	ax[1, 0].set_xlabel("Wavelength (um)")
 	ax[1, 0].set_ylabel("Power (db)")
 	ax[1, 0].set_ylim(-15, 0)
 	ax[1, 0].set_xlim(wavelength_array[0], wavelength_array[-1])
 	ax[1, 0].set_title("Coupling Efficiency")
-	sim_data_plot.plot_field("field_xy", "E", "abs^2", z=0, ax=ax[1, 1])
+	sim_data.plot_field("field_xy", "E", "abs^2", z=0, ax=ax[1, 1])
 	ax[0, 0].plot(FoM, "ro-", label="FoM")
 	ax[0, 0].plot(penalty, "bo-", label="Penalty")
 	ax[0, 0].plot(obj_vals, "ko-", label="Objective")	
