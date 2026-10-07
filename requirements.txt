@@ -1,7 +1,7 @@
 numpy>=1.26
 scipy>=1.11
 matplotlib
-tidy3d>=2.12,<3.0
+tidy3d>=2.12
 gdstk
 ipykernel
 autograd
