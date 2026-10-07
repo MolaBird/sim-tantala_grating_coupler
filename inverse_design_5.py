@@ -476,33 +476,83 @@ def main_loop(override=False):
 
         plot_design(f"./temp/iteration-{i}.png", params, beta_i)
 
+
 def plot_design(fname, params, beta):
     fig, ax = plt.subplots(1, 1, figsize=(4, 4))
     sim = make_adjoint_sim(params, beta=beta, unfold=True)
     sim.plot_eps(z=0, source_alpha=0, monitor_alpha=0, ax=ax)
     fig.savefig(fname)
 
-main_loop(override=False)
+
+def report_final_design():
+    
+	history_dict = load_history()
+	obj_vals = np.array(history_dict["objective"])
+	penalty = np.array(history_dict["penalty"])
+	FoM = np.array(history_dict["FoM"])
+
+	fig, ax = plt.subplots(1, 2, figsize=(10,4))
+	ax[0].plot(FoM, "ro-", label="FoM")
+	ax[0].plot(penalty, "bo-", label="Penalty")
+	ax[0].plot(obj_vals, "ko-", label="Objective")
+	ax[0].legend()
+	ax[0].set_xlabel("iterations")
+	ax[0].set_ylabel("Value")
+	ax[0].set_title(f"Learning Curve")
+	ax[0].set_ylim(-1.1, 1.1)
+
+	last_params = history_dict["params"][-1]
+
+	field_xy = td.FieldMonitor(
+		size=(td.inf, td.inf, 0),
+		freqs=[freq],
+		name="field_xy",
+	)
+
+	field_xz = td.FieldMonitor(
+		size=(td.inf, 0, td.inf),
+		freqs=[freq],
+		name="field_xz",
+	)
+
+	# Monitor to compute the grating coupler efficiency.
+	gc_efficiency = td.ModeMonitor(
+		center=[mon_pos_x, 0, 0],
+		size=[0, mon_width, mon_height],
+		freqs=freq_array,
+		mode_spec=td.ModeSpec(num_modes=1, target_neff=n_tantala),
+		name="gc_efficiency",
+	)
+
+	sim = make_adjoint_sim(last_params, binarize=True, unfold=True)
+	sim = sim.copy(update=dict(monitors=(field_xy, field_xz, gc_efficiency)))
+	sim_data = web.run(sim, task_name="inv_des_final")
+
+	mode_amps = sim_data["gc_efficiency"]
+	coeffs_f = mode_amps.amps.sel(direction="-")
+	power_0 = np.abs(coeffs_f.sel(mode_index=0)) ** 2
+	power_0_db = 10 * np.log10(power_0)
+
+	sim_plot = sim.updated_copy(symmetry=(0, 0, 0), monitors=(field_xy, field_xz, gc_efficiency))
+	sim_data_plot = sim_data.updated_copy(simulation=sim_plot)
+
+	fig, ax = plt.subplots(2, 2, figsize=(8, 6), tight_layout=True)
+	sim_plot.plot_eps(z=0, source_alpha=0, monitor_alpha=0, ax=ax[0, 1])
+	ax[1, 0].plot(wavelength_array, power_0_db, "-k")
+	ax[1, 0].set_xlabel("Wavelength (um)")
+	ax[1, 0].set_ylabel("Power (db)")
+	ax[1, 0].set_ylim(-15, 0)
+	ax[1, 0].set_xlim(wavelength_array[0], wavelength_array[-1])
+	ax[1, 0].set_title("Coupling Efficiency")
+	sim_data_plot.plot_field("field_xy", "E", "abs^2", z=0, ax=ax[1, 1])
+	ax[0, 0].plot(obj_vals, "ro")
+	ax[0, 0].set_xlabel("iterations")
+	ax[0, 0].set_ylabel("objective function")
+	ax[0, 0].set_ylim(-1, 1)
+	ax[0, 0].set_title(f"Final Objective Function Value: {obj_vals[-1]:.2f}")
+	fig.savefig("./temp/final_results.png")
 
 
-history_dict = load_history()
-obj_vals = np.array(history_dict["objective"])
-penalty = np.array(history_dict["penalty"])
-FoM = np.array(history_dict["FoM"])
-
-fig, ax = plt.subplots(1, 2, figsize=(10,4))
-ax[0].plot(FoM, "ro-", label="FoM")
-ax[0].plot(penalty, "bo-", label="Penalty")
-ax[0].plot(obj_vals, "ko-", label="Objective")
-ax[0].legend()
-ax[0].set_xlabel("iterations")
-ax[0].set_ylabel("Value")
-ax[0].set_title(f"Learning Curve")
-ax[0].set_ylim(-1.1, 1.1)
-
-last_params = history_dict["params"][-1]
-last_beta = history_dict["beta"][-1]
-
-sim_final = make_adjoint_sim(last_params, beta=last_beta, unfold=True)
-sim_final.plot_eps(z=0, source_alpha=0, monitor_alpha=0, ax=ax[1])
-fig.savefig("./temp/final_results.png")
+if __name__ == "__main__":
+	main_loop(override=False)
+	report_final_design()
