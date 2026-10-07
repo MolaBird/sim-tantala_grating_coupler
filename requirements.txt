@@ -1,6 +1,10 @@
-numpy>=1.26,<2.1
-scipy>=1.11,<1.14
-matplotlib>=3.8,<3.10
-tidy3d>=2.7,<3.0
+numpy>=1.26
+scipy>=1.11
+matplotlib
+tidy3d>=2.12,<3.0
 gdstk
 ipykernel
+autograd
+jax 
+jaxlib 
+optax
