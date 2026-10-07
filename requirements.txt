@@ -8,3 +8,4 @@ autograd
 jax 
 jaxlib 
 optax
+ipympl
