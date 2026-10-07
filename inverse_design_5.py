@@ -491,16 +491,6 @@ def report_final_design():
 	penalty = np.array(history_dict["penalty"])
 	FoM = np.array(history_dict["FoM"])
 
-	fig, ax = plt.subplots(1, 2, figsize=(10,4))
-	ax[0].plot(FoM, "ro-", label="FoM")
-	ax[0].plot(penalty, "bo-", label="Penalty")
-	ax[0].plot(obj_vals, "ko-", label="Objective")
-	ax[0].legend()
-	ax[0].set_xlabel("iterations")
-	ax[0].set_ylabel("Value")
-	ax[0].set_title(f"Learning Curve")
-	ax[0].set_ylim(-1.1, 1.1)
-
 	last_params = history_dict["params"][-1]
 
 	field_xy = td.FieldMonitor(
@@ -545,14 +535,15 @@ def report_final_design():
 	ax[1, 0].set_xlim(wavelength_array[0], wavelength_array[-1])
 	ax[1, 0].set_title("Coupling Efficiency")
 	sim_data_plot.plot_field("field_xy", "E", "abs^2", z=0, ax=ax[1, 1])
-	ax[0, 0].plot(obj_vals, "ro")
+	ax[0, 0].plot(FoM, "ro-", label="FoM")
+	ax[0, 0].plot(penalty, "bo-", label="Penalty")
+	ax[0, 0].plot(obj_vals, "ko-", label="Objective")	
 	ax[0, 0].set_xlabel("iterations")
-	ax[0, 0].set_ylabel("objective function")
-	ax[0, 0].set_ylim(-1, 1)
-	ax[0, 0].set_title(f"Final Objective Function Value: {obj_vals[-1]:.2f}")
+	ax[0, 0].set_ylabel("Value")
+	ax[0, 0].set_title(f"Learning Curve")
+	ax[0, 0].legend()
 	fig.savefig("./temp/final_results.png")
 
-
 if __name__ == "__main__":
-	main_loop(override=False)
+	# main_loop(override=False)
 	report_final_design()
