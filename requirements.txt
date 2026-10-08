@@ -9,3 +9,4 @@ jax
 jaxlib 
 optax
 ipympl
+opencv-python
