@@ -1,0 +1,24 @@
+Study 'lmm40x-smooth'  (10.2 M cells, 18791 time steps max)
+item                               sims    max FC  typical FC          time
+25 iterations (forward+adjoint)      50      1.89         n/a        31 min
+final broadband report                1      0.05         n/a         1 min
+---------------------------------------------------------------------------
+total                                        1.94      <=1.94        32 min
+time estimate: from 106 measured simulation(s)
+submitted: True
+iter   0 | beta  30.00 | w_feat 1.000 | FoM 0.3166 | feature=0.0199 connectivity=0.0000 curvature=0.0569 | J 0.2398
+iter   1 | beta  30.42 | w_feat 1.000 | FoM 0.3156 | feature=0.0289 connectivity=0.0000 curvature=0.0394 | J 0.2474
+iter   2 | beta  30.83 | w_feat 1.000 | FoM 0.3140 | feature=0.0265 connectivity=0.0000 curvature=0.0295 | J 0.2580
+Study 'lmm40x-smooth'  (10.2 M cells, 18791 time steps max)
+item                               sims    max FC  typical FC          time
+22 iterations (forward+adjoint)      44      1.66         n/a        28 min
+final broadband report                1      0.05         n/a         1 min
+---------------------------------------------------------------------------
+total                                        1.71      <=1.71        28 min
+time estimate: from 113 measured simulation(s)
+submitted: True
+Resuming: 3/25 iterations done.
+iter   3 | beta  31.25 | w_feat 1.000 | FoM 0.3140 | feature=0.0267 connectivity=0.0000 curvature=0.0236 | J 0.2638
+iter   4 | beta  31.67 | w_feat 1.000 | FoM 0.3126 | feature=0.0262 connectivity=0.0000 curvature=0.0196 | J 0.2668
+iter   5 | beta  32.08 | w_feat 1.000 | FoM 0.3116 | feature=0.0256 connectivity=0.0000 curvature=0.0173 | J 0.2688
+iter   6 | beta  32.50 | w_feat 1.000 | FoM 0.3109 | feature=0.0268 connectivity=0.0000 curvature=0.0157 | J 0.2684

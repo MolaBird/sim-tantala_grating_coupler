@@ -1,0 +1,9 @@
+Study 'gaussian-frame'  (8.9 M cells, 18791 time steps max)
+item                               sims    max FC  typical FC          time
+15 iterations (forward+adjoint)      30      1.00         n/a    2 h 00 min
+final broadband report                1      0.04         n/a         4 min
+---------------------------------------------------------------------------
+total                                        1.04      <=1.04    2 h 04 min
+time estimate: rough default (nothing measured yet)
+submitted: False
+Cancelled, nothing submitted.

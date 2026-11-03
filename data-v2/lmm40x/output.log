@@ -1,0 +1,30 @@
+Study 'lmm40x'  (10.2 M cells, 18791 time steps max)
+item                               sims    max FC  typical FC          time
+15 iterations (forward+adjoint)      30      1.13         n/a    2 h 00 min
+final broadband report                1      0.05         n/a         4 min
+---------------------------------------------------------------------------
+total                                        1.18      <=1.18    2 h 04 min
+time estimate: rough default (nothing measured yet)
+submitted: False
+Cancelled, nothing submitted.
+Study 'lmm40x'  (10.2 M cells, 18791 time steps max)
+item                               sims    max FC  typical FC          time
+15 iterations (forward+adjoint)      30      1.13         n/a    2 h 00 min
+final broadband report                1      0.05         n/a         4 min
+---------------------------------------------------------------------------
+total                                        1.18      <=1.18    2 h 04 min
+time estimate: rough default (nothing measured yet)
+submitted: True
+iter   0 | beta  10.00 | FoM 0.1751 | feature=0.0179 connectivity=0.0000 | J 0.1573
+iter   1 | beta  11.43 | FoM 0.1812 | feature=0.0168 connectivity=0.0433 | J 0.1212
+iter   2 | beta  12.86 | FoM 0.1865 | feature=0.0130 connectivity=0.0000 | J 0.1735
+iter   3 | beta  14.29 | FoM 0.1922 | feature=0.0149 connectivity=0.0000 | J 0.1773
+iter   4 | beta  15.71 | FoM 0.2020 | feature=0.0887 connectivity=0.0000 | J 0.1133
+iter   5 | beta  17.14 | FoM 0.1992 | feature=0.0291 connectivity=0.0000 | J 0.1701
+iter   6 | beta  18.57 | FoM 0.2020 | feature=0.0266 connectivity=0.0396 | J 0.1358
+iter   7 | beta  20.00 | FoM 0.2039 | feature=0.0245 connectivity=0.0000 | J 0.1794
+iter   8 | beta  21.43 | FoM 0.2057 | feature=0.0269 connectivity=0.1496 | J 0.0293
+iter   9 | beta  22.86 | FoM 0.2080 | feature=0.0215 connectivity=0.0018 | J 0.1847
+iter  10 | beta  24.29 | FoM 0.2100 | feature=0.0179 connectivity=0.0000 | J 0.1921
+iter  11 | beta  25.71 | FoM 0.2115 | feature=0.0178 connectivity=0.0000 | J 0.1937
+iter  12 | beta  27.14 | FoM 0.2125 | feature=0.0174 connectivity=0.0288 | J 0.1663

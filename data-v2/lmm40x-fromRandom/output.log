@@ -1,0 +1,72 @@
+Study 'lmm40x-fromRandom'  (10.2 M cells, 18791 time steps max)
+item                               sims    max FC  typical FC          time
+50 iterations (forward+adjoint)     100      3.78         n/a    1 h 05 min
+final broadband report                1      0.05         n/a         1 min
+---------------------------------------------------------------------------
+total                                        3.83      <=3.83    1 h 05 min
+time estimate: from 29 measured simulation(s)
+submitted: True
+iter   0 | beta   1.00 | w_feat 0.050 | FoM 0.0033 | feature=0.0476 connectivity=0.0000 | J -0.0443
+iter   1 | beta   1.59 | w_feat 0.050 | FoM 0.0552 | feature=0.0477 connectivity=0.0000 | J 0.0075
+iter   2 | beta   2.18 | w_feat 0.052 | FoM 0.1950 | feature=0.0373 connectivity=0.0000 | J 0.1577
+iter   3 | beta   2.78 | w_feat 0.054 | FoM 0.2482 | feature=0.0301 connectivity=0.1491 | J 0.0690
+iter   4 | beta   3.37 | w_feat 0.056 | FoM 0.2650 | feature=0.0285 connectivity=0.0147 | J 0.2218
+iter   5 | beta   3.96 | w_feat 0.060 | FoM 0.2779 | feature=0.0258 connectivity=0.0339 | J 0.2182
+iter   6 | beta   4.55 | w_feat 0.064 | FoM 0.2713 | feature=0.0244 connectivity=0.0000 | J 0.2469
+iter   7 | beta   5.14 | w_feat 0.069 | FoM 0.2753 | feature=0.0237 connectivity=0.0807 | J 0.1710
+iter   8 | beta   5.73 | w_feat 0.075 | FoM 0.2840 | feature=0.0230 connectivity=0.0406 | J 0.2204
+iter   9 | beta   6.33 | w_feat 0.082 | FoM 0.2845 | feature=0.0215 connectivity=0.0085 | J 0.2545
+iter  10 | beta   6.92 | w_feat 0.090 | FoM 0.2894 | feature=0.0203 connectivity=0.0000 | J 0.2691
+iter  11 | beta   7.51 | w_feat 0.098 | FoM 0.2904 | feature=0.0197 connectivity=0.0629 | J 0.2078
+iter  12 | beta   8.10 | w_feat 0.107 | FoM 0.2928 | feature=0.0207 connectivity=0.0293 | J 0.2428
+iter  13 | beta   8.69 | w_feat 0.117 | FoM 0.2940 | feature=0.0217 connectivity=0.0201 | J 0.2522
+iter  14 | beta   9.29 | w_feat 0.128 | FoM 0.2950 | feature=0.0214 connectivity=0.0000 | J 0.2737
+iter  15 | beta   9.88 | w_feat 0.139 | FoM 0.2958 | feature=0.0203 connectivity=0.0000 | J 0.2755
+iter  16 | beta  10.47 | w_feat 0.151 | FoM 0.2964 | feature=0.0191 connectivity=0.0000 | J 0.2773
+iter  17 | beta  11.06 | w_feat 0.164 | FoM 0.2982 | feature=0.0183 connectivity=0.0000 | J 0.2799
+iter  18 | beta  11.65 | w_feat 0.178 | FoM 0.3010 | feature=0.0176 connectivity=0.0000 | J 0.2833
+iter  19 | beta  12.24 | w_feat 0.193 | FoM 0.3027 | feature=0.0172 connectivity=0.2195 | J 0.0661
+iter  20 | beta  12.84 | w_feat 0.208 | FoM 0.3042 | feature=0.0169 connectivity=0.0000 | J 0.2873
+iter  21 | beta  13.43 | w_feat 0.224 | FoM 0.3056 | feature=0.0167 connectivity=0.0000 | J 0.2889
+iter  22 | beta  14.02 | w_feat 0.242 | FoM 0.3067 | feature=0.0165 connectivity=0.0079 | J 0.2823
+iter  23 | beta  14.61 | w_feat 0.259 | FoM 0.3074 | feature=0.0167 connectivity=0.0000 | J 0.2907
+iter  24 | beta  15.20 | w_feat 0.278 | FoM 0.3083 | feature=0.0164 connectivity=0.0000 | J 0.2919
+iter  25 | beta  15.80 | w_feat 0.297 | FoM 0.3092 | feature=0.0157 connectivity=0.0000 | J 0.2935
+iter  26 | beta  16.39 | w_feat 0.317 | FoM 0.3099 | feature=0.0154 connectivity=0.0000 | J 0.2945
+iter  27 | beta  16.98 | w_feat 0.338 | FoM 0.3105 | feature=0.0155 connectivity=0.0000 | J 0.2951
+iter  28 | beta  17.57 | w_feat 0.360 | FoM 0.3113 | feature=0.0154 connectivity=0.0000 | J 0.2959
+iter  29 | beta  18.16 | w_feat 0.383 | FoM 0.3120 | feature=0.0145 connectivity=0.0000 | J 0.2975
+iter  30 | beta  18.76 | w_feat 0.406 | FoM 0.3127 | feature=0.0132 connectivity=0.0000 | J 0.2995
+iter  31 | beta  19.35 | w_feat 0.430 | FoM 0.3130 | feature=0.0131 connectivity=0.0000 | J 0.2999
+iter  32 | beta  19.94 | w_feat 0.455 | FoM 0.3130 | feature=0.0132 connectivity=0.0000 | J 0.2998
+iter  33 | beta  20.53 | w_feat 0.481 | FoM 0.3129 | feature=0.0134 connectivity=0.0000 | J 0.2995
+iter  34 | beta  21.12 | w_feat 0.507 | FoM 0.3129 | feature=0.0135 connectivity=0.0000 | J 0.2994
+iter  35 | beta  21.71 | w_feat 0.535 | FoM 0.3132 | feature=0.0138 connectivity=0.0000 | J 0.2994
+iter  36 | beta  22.31 | w_feat 0.563 | FoM 0.3137 | feature=0.0141 connectivity=0.0000 | J 0.2996
+iter  37 | beta  22.90 | w_feat 0.592 | FoM 0.3143 | feature=0.0145 connectivity=0.0000 | J 0.2998
+iter  38 | beta  23.49 | w_feat 0.621 | FoM 0.3146 | feature=0.0147 connectivity=0.0000 | J 0.2999
+iter  39 | beta  24.08 | w_feat 0.652 | FoM 0.3148 | feature=0.0149 connectivity=0.0000 | J 0.2999
+iter  40 | beta  24.67 | w_feat 0.683 | FoM 0.3149 | feature=0.0149 connectivity=0.0000 | J 0.3000
+iter  41 | beta  25.27 | w_feat 0.715 | FoM 0.3151 | feature=0.0153 connectivity=0.0000 | J 0.2999
+iter  42 | beta  25.86 | w_feat 0.748 | FoM 0.3154 | feature=0.0156 connectivity=0.0000 | J 0.2998
+iter  43 | beta  26.45 | w_feat 0.782 | FoM 0.3156 | feature=0.0162 connectivity=0.0000 | J 0.2994
+iter  44 | beta  27.04 | w_feat 0.816 | FoM 0.3159 | feature=0.0164 connectivity=0.0000 | J 0.2995
+iter  45 | beta  27.63 | w_feat 0.851 | FoM 0.3162 | feature=0.0171 connectivity=0.0000 | J 0.2991
+iter  46 | beta  28.22 | w_feat 0.887 | FoM 0.3164 | feature=0.0173 connectivity=0.0000 | J 0.2991
+iter  47 | beta  28.82 | w_feat 0.924 | FoM 0.3165 | feature=0.0179 connectivity=0.0000 | J 0.2986
+iter  48 | beta  29.41 | w_feat 0.962 | FoM 0.3165 | feature=0.0185 connectivity=0.0000 | J 0.2980
+iter  49 | beta  30.00 | w_feat 1.000 | FoM 0.3167 | feature=0.0194 connectivity=0.0000 | J 0.2973
+{
+  "efficiency_at_center": 0.31663028729256926,
+  "efficiency_max": 0.31663028729256926,
+  "wavelength_at_max": 2.923,
+  "objective_transmission": 0.4350078127434955,
+  "window_fraction": 0.8767616149416044,
+  "discarded_by_y_symmetrisation": 0.013021702606214158,
+  "solid_violation_px": 59,
+  "void_violation_px": 68,
+  "n_solid_components": 1,
+  "islands_removed": 0,
+  "connectivity_measure": 2.749228358415663,
+  "efficiency_end_to_end_at_center": 0.11918967703140373
+}

@@ -1,0 +1,51 @@
+Study 'lmm40x-softNsmooth'  (10.2 M cells, 18791 time steps max)
+item                               sims    max FC  typical FC          time
+50 iterations (forward+adjoint)     100      3.78         n/a    1 h 03 min
+final broadband report                1      0.05         n/a         1 min
+---------------------------------------------------------------------------
+total                                        3.83      <=3.83    1 h 04 min
+time estimate: from 127 measured simulation(s)
+submitted: False
+Cancelled, nothing submitted.
+Study 'lmm40x-softNsmooth'  (10.2 M cells, 18791 time steps max)
+item                               sims    max FC  typical FC          time
+60 iterations (forward+adjoint)     120      4.53         n/a    1 h 15 min
+final broadband report                1      0.05         n/a         1 min
+---------------------------------------------------------------------------
+total                                        4.58      <=4.58    1 h 16 min
+time estimate: from 127 measured simulation(s)
+submitted: True
+iter   0 | beta   1.00 | w_feat 0.020 | FoM 0.0033 | feature=0.0190 connectivity=0.0000 curvature=0.0150 | J -0.0307
+iter   1 | beta   1.00 | w_feat 0.020 | FoM 0.0084 | feature=0.0190 connectivity=0.0000 curvature=0.0179 | J -0.0286
+iter   2 | beta   1.00 | w_feat 0.020 | FoM 0.0208 | feature=0.0189 connectivity=0.0000 curvature=0.0140 | J -0.0122
+iter   3 | beta   1.00 | w_feat 0.020 | FoM 0.0388 | feature=0.0183 connectivity=0.0000 curvature=0.0112 | J 0.0092
+iter   4 | beta   1.00 | w_feat 0.020 | FoM 0.0524 | feature=0.0179 connectivity=0.0000 curvature=0.0102 | J 0.0243
+iter   5 | beta   1.00 | w_feat 0.020 | FoM 0.0696 | feature=0.0175 connectivity=0.0000 curvature=0.0098 | J 0.0423
+iter   6 | beta   1.00 | w_feat 0.020 | FoM 0.0909 | feature=0.0172 connectivity=0.0000 curvature=0.0095 | J 0.0643
+iter   7 | beta   1.00 | w_feat 0.020 | FoM 0.1138 | feature=0.0168 connectivity=0.0000 curvature=0.0094 | J 0.0876
+iter   8 | beta   1.00 | w_feat 0.020 | FoM 0.1367 | feature=0.0164 connectivity=0.0000 curvature=0.0089 | J 0.1114
+iter   9 | beta   1.00 | w_feat 0.020 | FoM 0.1589 | feature=0.0161 connectivity=0.0000 curvature=0.0091 | J 0.1337
+iter  10 | beta   1.00 | w_feat 0.020 | FoM 0.1794 | feature=0.0158 connectivity=0.0000 curvature=0.0086 | J 0.1550
+iter  11 | beta   1.01 | w_feat 0.020 | FoM 0.1977 | feature=0.0155 connectivity=0.0000 curvature=0.0084 | J 0.1739
+iter  12 | beta   1.06 | w_feat 0.020 | FoM 0.2138 | feature=0.0152 connectivity=0.0000 curvature=0.0082 | J 0.1905
+iter  13 | beta   1.13 | w_feat 0.020 | FoM 0.2274 | feature=0.0148 connectivity=0.0075 curvature=0.0083 | J 0.1968
+iter  14 | beta   1.23 | w_feat 0.020 | FoM 0.2372 | feature=0.0145 connectivity=0.0000 curvature=0.0088 | J 0.2140
+iter  15 | beta   1.35 | w_feat 0.020 | FoM 0.2451 | feature=0.0141 connectivity=0.0000 curvature=0.0082 | J 0.2228
+iter  16 | beta   1.51 | w_feat 0.020 | FoM 0.2531 | feature=0.0138 connectivity=0.0000 curvature=0.0084 | J 0.2310
+iter  17 | beta   1.69 | w_feat 0.020 | FoM 0.2609 | feature=0.0134 connectivity=0.0000 curvature=0.0081 | J 0.2394
+iter  18 | beta   1.91 | w_feat 0.020 | FoM 0.2673 | feature=0.0129 connectivity=0.0000 curvature=0.0082 | J 0.2461
+iter  19 | beta   2.15 | w_feat 0.020 | FoM 0.2727 | feature=0.0125 connectivity=0.0000 curvature=0.0081 | J 0.2521
+iter  20 | beta   2.42 | w_feat 0.020 | FoM 0.2775 | feature=0.0120 connectivity=0.0000 curvature=0.0077 | J 0.2578
+iter  21 | beta   2.71 | w_feat 0.020 | FoM 0.2821 | feature=0.0115 connectivity=0.0000 curvature=0.0078 | J 0.2628
+iter  22 | beta   3.04 | w_feat 0.020 | FoM 0.2864 | feature=0.0109 connectivity=0.0000 curvature=0.0075 | J 0.2679
+iter  23 | beta   3.39 | w_feat 0.020 | FoM 0.2897 | feature=0.0104 connectivity=0.0217 curvature=0.0072 | J 0.2504
+iter  24 | beta   3.78 | w_feat 0.020 | FoM 0.2934 | feature=0.0098 connectivity=0.0181 curvature=0.0070 | J 0.2584
+iter  25 | beta   4.19 | w_feat 0.020 | FoM 0.2965 | feature=0.0093 connectivity=0.0000 curvature=0.0069 | J 0.2803
+iter  26 | beta   4.63 | w_feat 0.020 | FoM 0.2991 | feature=0.0088 connectivity=0.0299 curvature=0.0069 | J 0.2536
+iter  27 | beta   5.09 | w_feat 0.020 | FoM 0.3011 | feature=0.0083 connectivity=0.0163 curvature=0.0065 | J 0.2700
+iter  28 | beta   5.59 | w_feat 0.021 | FoM 0.3031 | feature=0.0083 connectivity=0.0000 curvature=0.0065 | J 0.2883
+iter  29 | beta   6.11 | w_feat 0.024 | FoM 0.3042 | feature=0.0091 connectivity=0.0464 curvature=0.0075 | J 0.2412
+iter  30 | beta   6.66 | w_feat 0.030 | FoM 0.3050 | feature=0.0106 connectivity=0.0000 curvature=0.0089 | J 0.2855
+iter  31 | beta   7.24 | w_feat 0.037 | FoM 0.3058 | feature=0.0126 connectivity=0.0197 curvature=0.0105 | J 0.2630
+iter  32 | beta   7.85 | w_feat 0.047 | FoM 0.3066 | feature=0.0148 connectivity=0.0007 curvature=0.0130 | J 0.2780
+iter  33 | beta   8.49 | w_feat 0.059 | FoM 0.3080 | feature=0.0172 connectivity=0.0000 curvature=0.0155 | J 0.2752

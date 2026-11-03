@@ -1,0 +1,46 @@
+Study 'lmm40x-fromRandom'  (10.2 M cells, 18791 time steps max)
+item                               sims    max FC  typical FC          time
+15 iterations (forward+adjoint)      30      1.13         n/a        18 min
+final broadband report                1      0.05         n/a         1 min
+---------------------------------------------------------------------------
+total                                        1.18      <=1.18        19 min
+time estimate: from 13 measured simulation(s)
+submitted: False
+Cancelled, nothing submitted.
+Study 'lmm40x-fromRandom'  (10.2 M cells, 18791 time steps max)
+item                               sims    max FC  typical FC          time
+15 iterations (forward+adjoint)      30      1.13         n/a        18 min
+final broadband report                1      0.05         n/a         1 min
+---------------------------------------------------------------------------
+total                                        1.18      <=1.18        19 min
+time estimate: from 13 measured simulation(s)
+submitted: True
+iter   0 | beta   1.00 | FoM 0.0033 | feature=0.9522 connectivity=0.0000 | J -0.9489
+iter   1 | beta   3.07 | FoM 0.0477 | feature=0.9276 connectivity=0.0000 | J -0.8799
+iter   2 | beta   5.14 | FoM 0.1214 | feature=0.3549 connectivity=0.0017 | J -0.2352
+iter   3 | beta   7.21 | FoM 0.1899 | feature=0.1997 connectivity=0.1367 | J -0.1464
+iter   4 | beta   9.29 | FoM 0.1960 | feature=0.0802 connectivity=0.0825 | J 0.0334
+iter   5 | beta  11.36 | FoM 0.1986 | feature=0.0690 connectivity=0.0064 | J 0.1233
+iter   6 | beta  13.43 | FoM 0.2043 | feature=0.0514 connectivity=0.0885 | J 0.0643
+iter   7 | beta  15.50 | FoM 0.2102 | feature=0.0561 connectivity=0.1668 | J -0.0126
+iter   8 | beta  17.57 | FoM 0.2165 | feature=0.0612 connectivity=0.1781 | J -0.0228
+iter   9 | beta  19.64 | FoM 0.2219 | feature=0.0685 connectivity=0.0654 | J 0.0880
+iter  10 | beta  21.71 | FoM 0.2238 | feature=0.0704 connectivity=0.0000 | J 0.1534
+iter  11 | beta  23.79 | FoM 0.2234 | feature=0.0667 connectivity=0.0204 | J 0.1364
+iter  12 | beta  25.86 | FoM 0.2225 | feature=0.0645 connectivity=0.0000 | J 0.1580
+iter  13 | beta  27.93 | FoM 0.2222 | feature=0.0591 connectivity=0.0000 | J 0.1630
+iter  14 | beta  30.00 | FoM 0.2223 | feature=0.0495 connectivity=0.0000 | J 0.1727
+{
+  "efficiency_at_center": 0.22365323781060015,
+  "efficiency_max": 0.22736377520229858,
+  "wavelength_at_max": 2.953,
+  "objective_transmission": 0.4350078127434955,
+  "window_fraction": 0.8767616149416044,
+  "discarded_by_y_symmetrisation": 0.013021702606214158,
+  "solid_violation_px": 16,
+  "void_violation_px": 38,
+  "n_solid_components": 1,
+  "islands_removed": 0,
+  "connectivity_measure": 3.60678744913388,
+  "efficiency_end_to_end_at_center": 0.08419016831779491
+}

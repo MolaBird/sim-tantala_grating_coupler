@@ -1,0 +1,11 @@
+Study 'lmm40x-latePenalty-smooth'  (10.2 M cells, 18791 time steps max)
+item                               sims    max FC  typical FC          time
+15 iterations (forward+adjoint)      30      1.13         n/a        19 min
+final broadband report                1      0.05         n/a         1 min
+---------------------------------------------------------------------------
+total                                        1.18      <=1.18        20 min
+time estimate: from 192 measured simulation(s)
+submitted: True
+iter   0 | beta  25.00 | w_feat 0.500 | FoM 0.3012 | feature=0.0162 connectivity=0.0000 curvature=0.0381 | J 0.2470
+iter   1 | beta  26.43 | w_feat 0.500 | FoM 0.3035 | feature=0.0153 connectivity=0.0000 curvature=0.0524 | J 0.2358
+iter   3 | beta  29.29 | w_feat 0.500 | FoM 0.3133 | feature=0.0149 connectivity=0.0623 curvature=0.0862 | J 0.1499

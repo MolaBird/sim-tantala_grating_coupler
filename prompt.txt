@@ -1,0 +1,11 @@
+This is a project for inverse design of a suspended tantala grating coupler. There are few things yet to be improved:
+
+- Current refractive index data is inaccurate. Ta2O5_Index_of_refraction.xlsx is the right data to use and Tantala_tidy3d_Medium.pkl is a tidy3d medium fitted from it. 
+- Current design includes several masks that enforce the grow of a tantala. This is due to fabricational concern. I want you to implement a algorithm that forces the connectivity and minimal feature size, 
+(would be preferred if the current mask feature can be preserved given it doesn't make implementation too hard)
+- Current design uses a perfect gaussian source as input. However, the actual beam in practive will be a spot after a reflective obejective. I will provide a module that implement the wave optics of it, essentially feeds the wavefront/intensity of the beam on the grating coupler. 
+What you need to do is to figure out how to define such custom light source in tidy3d. 
+- The geometries (including the square region, arms, waveguide) and the wavelength should be preserved. The output data should look like:
+data-v2/
+|_name_of_specific_study/
+- try to keep the module intuitive and structure simple

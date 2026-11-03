@@ -1,0 +1,16 @@
+{
+  "efficiency_at_center": 0.30441196859360153,
+  "efficiency_max": 0.30441196859360153,
+  "wavelength_at_max": 2.923,
+  "objective_transmission": 0.4350078127434955,
+  "window_fraction": 0.8767616149416044,
+  "discarded_by_y_symmetrisation": 0.013021702606214158,
+  "solid_violation_px": 21,
+  "void_violation_px": 35,
+  "n_solid_components": 1,
+  "islands_removed": 0,
+  "connectivity_measure": 3.583259506782475,
+  "curvature_penalty": 0.14283169691482478,
+  "boundary_frac_below_min_radius": 0.340440665296236,
+  "efficiency_end_to_end_at_center": 0.11459031456343144
+}
